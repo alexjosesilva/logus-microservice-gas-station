@@ -1,6 +1,6 @@
 package org.example.logus_soa.Model;
 
-public class ModeloCombustivel {
+public class CombustivelModel {
     private String nome;
     private Long id;
 
@@ -20,11 +20,11 @@ public class ModeloCombustivel {
         this.nome = nome;
     }
 
-    public ModeloCombustivel(){
+    public CombustivelModel(){
 
     }
 
-    public ModeloCombustivel(String nome) {
+    public CombustivelModel(String nome) {
         this.nome = nome;
     }
 }

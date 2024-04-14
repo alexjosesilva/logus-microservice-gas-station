@@ -1,6 +1,6 @@
 package org.example.logus_soa.Controller;
 
-import org.example.logus_soa.Model.ModeloBomba;
+import org.example.logus_soa.Model.BombaModel;
 import org.example.logus_soa.Services.BombaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -15,13 +15,13 @@ public class BombaController {
     private BombaService bombaService;
 
     @PostMapping
-    public String criarVeiculo(@RequestBody ModeloBomba bomba) {
+    public String criarVeiculo(@RequestBody BombaModel bomba) {
         bombaService.salvarBombaCSV(bomba);
         return "Bomba criado com sucesso!";
     }
 
     @GetMapping
-    public List<ModeloBomba> listarBombas() {
+    public List<BombaModel> listarBombas() {
         return bombaService.lerBombaCSV();
     }
 

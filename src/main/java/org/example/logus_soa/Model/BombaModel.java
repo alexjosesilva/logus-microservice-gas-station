@@ -1,6 +1,6 @@
 package org.example.logus_soa.Model;
 
-public class ModeloBomba {
+public class BombaModel {
     private  long id;
     private String nomeCombustivel;
 

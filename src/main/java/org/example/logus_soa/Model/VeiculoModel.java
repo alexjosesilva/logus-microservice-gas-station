@@ -1,7 +1,7 @@
 package org.example.logus_soa.Model;
 
 
-public class ModeloVeiculo {
+public class VeiculoModel {
 
     private Long id;
     private String nomeModelo;
@@ -9,10 +9,10 @@ public class ModeloVeiculo {
     private double consumoGasolina;
     private double consumoDiesel;
 
-    public ModeloVeiculo(){
+    public VeiculoModel(){
 
     }
-    public ModeloVeiculo(Long id, String nomeModelo, double consumoEtanol, double consumoGasolina, double consumoDiesel) {
+    public VeiculoModel(Long id, String nomeModelo, double consumoEtanol, double consumoGasolina, double consumoDiesel) {
         this.id = id;
         this.nomeModelo = nomeModelo;
         this.consumoEtanol = consumoEtanol;

@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"org.example.logus_soa"},{"l":"org.example.logus_soa.Controller"},{"l":"org.example.logus_soa.Model"},{"l":"org.example.logus_soa.Services"}];updateSearchResults();

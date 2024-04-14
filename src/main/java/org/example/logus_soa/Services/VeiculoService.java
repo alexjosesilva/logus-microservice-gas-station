@@ -1,6 +1,6 @@
 package org.example.logus_soa.Services;
 
-import org.example.logus_soa.Model.ModeloVeiculo;
+import org.example.logus_soa.Model.VeiculoModel;
 import org.springframework.stereotype.Service;
 
 import java.io.*;
@@ -12,13 +12,17 @@ import java.util.UUID;
 public class VeiculoService {
 
     private static final String CSV_FILE_PATH = "src/main/resources/csv/veiculos.csv";
-
-    public void salvarVeiculoCSV(ModeloVeiculo veiculo) {
+    private static boolean flag = false;
+    public void salvarVeiculoCSV(VeiculoModel veiculo) {
 
         // Gerar um ID aleatório
         long id = gerarIdAleatorio();
 
         try (PrintWriter writer = new PrintWriter(new FileWriter(CSV_FILE_PATH, true))) {
+            flag = verificaFlag();
+            if (flag) {
+                writer.println("ID,Modelo,Etanol,Gasolina,Diesel");
+            }
             writer.println(
                     id + "," +
                     veiculo.getNomeModelo() + "," +
@@ -30,15 +34,15 @@ public class VeiculoService {
         }
     }
 
-    public List<ModeloVeiculo> lerVeiculosCSV() {
-        List<ModeloVeiculo> veiculos = new ArrayList<>();
+    public List<VeiculoModel> lerVeiculosCSV() {
+        List<VeiculoModel> veiculos = new ArrayList<>();
         try (BufferedReader reader = new BufferedReader(new FileReader(CSV_FILE_PATH))) {
             String linha;
             // Ignorar a primeira linha (cabeçalhos das colunas)
             reader.readLine();
             while ((linha = reader.readLine()) != null) {
                 String[] dados = linha.split(",");
-                ModeloVeiculo veiculo = new ModeloVeiculo();
+                VeiculoModel veiculo = new VeiculoModel();
                 veiculo.setId(Long.parseLong(dados[0]));
                 veiculo.setNomeModelo(dados[1]);
                 veiculo.setConsumoEtanol(Double.parseDouble(dados[2]));
@@ -57,4 +61,10 @@ public class VeiculoService {
     private long gerarIdAleatorio() {
         return UUID.randomUUID().getMostSignificantBits() & Long.MAX_VALUE;
     }
+
+    private boolean verificaFlag() {
+        File file = new File(CSV_FILE_PATH);
+        return file.exists() && file.length() == 0; // Retorna true se o arquivo existir, false caso contrário
+    }
+
 }

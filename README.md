@@ -1,5 +1,7 @@
 [![Latest Version](https://img.shields.io/github/v/release/alexjosesilva/logus-microservice-gas-station?include_prereleases)](https://github.com/alexjosesilva/logus-microservice-gas-station/releases/tag/1.0)
 [![License](https://img.shields.io/github/license/alexjosesilva/logus-microservice-gas-station)]([https://github.com/seu-usuario/seu-repositorio/blob/master/LICENSE](https://github.com/alexjosesilva/logus-microservice-gas-station/blob/master/LICENSE))
+[![Coverage Status](https://img.shields.io/codecov/c/github/alexjosesilva/logus-microservice-gas-station)](https://codecov.io/gh/alexjosesilva/logus-microservice-gas-station)
+
 
 
 # Projeto Gestão de Combustiveis para Veículos em Java com Spring Boot

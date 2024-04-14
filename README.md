@@ -1,3 +1,7 @@
+[![Latest Version](https://img.shields.io/github/v/release/alexjosesilva/logus-microservice-gas-station?include_prereleases)](https://github.com/alexjosesilva/logus-microservice-gas-station/releases/tag/1.0)
+[![License](https://img.shields.io/github/license/alexjosesilva/logus-microservice-gas-station)]([https://github.com/seu-usuario/seu-repositorio/blob/master/LICENSE](https://github.com/alexjosesilva/logus-microservice-gas-station/blob/master/LICENSE))
+
+
 # Projeto Gestão de Combustiveis para Veículos em Java com Spring Boot
 
 Este é um projeto de exemplo que implementa operações CRUD (Create, Read, Update, Delete) para gerenciar informações de veículos. Ele utiliza Java 17 e Spring Boot para criar uma API RESTful que salva e lê os dados de veículos em um arquivo CSV, sem a necessidade de um banco de dados.

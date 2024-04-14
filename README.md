@@ -71,3 +71,9 @@ git clone https://github.com/seu-usuario/nome-do-repositorio.git
 ---
 
 Este é um projeto de exemplo para fins educacionais. Sinta-se à vontade para explorar, modificar e experimentar com o código conforme necessário. Se tiver alguma dúvida ou sugestão, não hesite em entrar em contato. Aproveite!
+
+---
+
+## UML
+
+![UML Project](src/main/resources/img/logus_soa_uml.png)

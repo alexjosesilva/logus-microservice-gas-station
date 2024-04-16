@@ -3,7 +3,6 @@
 [![Coverage Status](https://img.shields.io/codecov/c/github/alexjosesilva/logus-microservice-gas-station)](https://codecov.io/gh/alexjosesilva/logus-microservice-gas-station)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=alexjosesilva_logus-microservice-gas-station&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=alexjosesilva_logus-microservice-gas-station)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=alexjosesilva_logus-microservice-gas-station&metric=bugs)](https://sonarcloud.io/summary/new_code?id=alexjosesilva_logus-microservice-gas-station)
-
 [![codecov](https://codecov.io/gh/alexjosesilva/logus-microservice-gas-station/graph/badge.svg?token=yEyzoYzhcI)](https://codecov.io/gh/alexjosesilva/logus-microservice-gas-station)
 
 # Projeto Gestão de Combustiveis para Veículos em Java com Spring Boot
